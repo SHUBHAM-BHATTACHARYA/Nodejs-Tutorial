@@ -1,0 +1,25 @@
+Create a simple calculator in Node.js with URL endpoints, you can use the built-in http and url modules. The server will parse the URL for an operation and two numbers, perform the calculation, and return the result. 
+
+Test the endpoints: Open your web browser or a tool like curl and visit the following URLs to test the calculator functionality:
+
+Addition: http://localhost:8000/calculate?operation=add&num1=10&num2=5
+
+Subtraction: http://localhost:8000/calculate?operation=subtract&num1=10&num2=5
+
+Multiplication: http://localhost:8000/calculate?operation=multiply&num1=10&num2=5
+
+Division: http://localhost:8000/calculate?operation=divide&num1=10&num2=5
+
+Invalid Operation: http://localhost:8000/calculate?operation=modulo&num1=10&num2=5
+
+Home Page: http://localhost:8000/
+
+test cases:
+http://localhost:8000/calculate?operation=add&num1=10&num2=
+output: Error: Missing or invalid parameters. Usage: /calculate?operation=[add|subtract|multiply|divide]&num1=[number]&num2=[number]
+
+http://localhost:8000/calculate?operation=add&num1=10&num2=10
+output: Result: 10 + 10 = 20
+
+http://localhost:8000/
+output: Welcome to the Node.js Calculator. Use the /calculate endpoint with operation, num1, and num2 parameters.

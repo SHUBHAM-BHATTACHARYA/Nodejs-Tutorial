@@ -1,0 +1,5 @@
+D:\Node Js\Tutorial>npm install -g nodemon
+
+start the server:
+
+D:\Node Js\Tutorial>nodemon 8.file_system_module
